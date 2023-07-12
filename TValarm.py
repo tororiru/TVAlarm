@@ -37,9 +37,6 @@ def turn_on_tv():
 
 # 動画再生
 def play_video():
-    #subprocess.run(["omxplayer", VIDEO_PATH_1])
-    #subprocess.run(["omxplayer", VIDEO_PATH_2])
-
     # 現在の曜日を取得
     today = datetime.datetime.now().weekday()
 
@@ -55,7 +52,7 @@ def run_alarm():
     turn_on_tv()
     play_video()
 
-# 画像とメッセージを送信する関数
+# 画像とメッセージを送信する関数（動作確認用だったので別になくてもよい）
 def send_image_and_message():
     # googleDriveに保存した画像のURL
      image_ids = ["【image1】","【image2】"]
@@ -63,7 +60,7 @@ def send_image_and_message():
      url_template = "https://drive.google.com/uc?export=view&id={}"
      random_url = url_template.format(random_id)
 
-    # おはようのメッセージを設定（動作確認用だったのでなくてもよい）
+    # おはようのメッセージを設定
      morning_message = "【適当なメッセージ】"
      garbage_message = "【可燃ゴミの日通知メッセージ】"
 
