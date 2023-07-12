@@ -11,7 +11,7 @@ import datetime
 # Nature RemoのAPIキーとデバイスIDを設定
 API_KEY = "【Nature RemoのAPI】"
 DEVICE_ID = "【デバイスID】"
-DEVICE_ID_SELECT_RASPI = "【HDMI分配器のラズパイのデバイスID】" // 必要であれば 
+DEVICE_ID_SELECT_RASPI = "【HDMI分配器のラズパイのデバイスID（必要であれば）】"
 
 # LINEアクセストークン
 ACCESS_TOKEN = "【LINEアクセストークン】"
