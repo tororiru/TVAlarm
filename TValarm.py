@@ -67,7 +67,6 @@ def send_image_and_message():
      today = datetime.datetime.now().weekday()
      message = garbage_message if today in [2, 5] else morning_message
     # 画像とメッセージを含むメッセージオブジェクトを作成
-    #image_message = ImageSendMessage(original_content_url=image_url, preview_image_url=image_url)
      text_message = TextSendMessage(text=message)
 
      image_message = ImageSendMessage(
